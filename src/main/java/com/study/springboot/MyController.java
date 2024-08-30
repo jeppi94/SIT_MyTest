@@ -43,5 +43,11 @@ public class MyController
 		return "test4";
 
 	}
+	
+	@RequestMapping("/test5")
+	public @ResponseBody String test5()
+	{
+		return "test5";
+	}
 
 }
