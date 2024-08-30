@@ -7,24 +7,33 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MyController
 {
-	
+
 	@RequestMapping("/")
-	public @ResponseBody String root() throws Exception{
+	public @ResponseBody String root() throws Exception
+	{
 		return "JSP in Gradle";
 	}
-	
+
 	@RequestMapping("/test1")
-	public String test1() {
-		
+	public String test1()
+	{
+
 		return "test1";
-		
+
 	}
+
 	@RequestMapping("/test2")
-	public String test2() {
-		
+	public @ResponseBody String test2()
+	{
 		return "test2";
-		
 	}
-	
-	
+
+	@RequestMapping("/test3")
+	public String test3()
+	{
+
+		return "test3";
+
+	}
+
 }
