@@ -36,4 +36,12 @@ public class MyController
 
 	}
 
+	@RequestMapping("/test4")
+	public String test4()
+	{
+
+		return "test4";
+
+	}
+
 }
